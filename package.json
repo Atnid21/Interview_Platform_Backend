@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Final Year Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Final",
+    "Year",
+    "Project",
+    "Interview",
+    "Platform",
+    "MERN"
+  ],
+  "author": "Shailesh Godghase, Atharva Nidhonkar, Rajwardhan Jadhav",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

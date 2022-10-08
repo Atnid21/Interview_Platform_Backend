@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const generateFile = require('./generateFile');
-const executeCpp = require('./executeCpp');
-const executePython = require('./executePython');
+const executeCpp = require('./Languages/executeCpp');
+const executePython = require('./Languages/executePython');
 
 router.get('/', async(req,res) => {
     res.send("Hell0");

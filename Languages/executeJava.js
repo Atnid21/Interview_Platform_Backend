@@ -7,14 +7,14 @@ const outputPath = path.join(__dirname, "outputs");
 if (!fs.existsSync(outputPath)) {
   fs.mkdirSync(outputPath, { recursive: true });
 }
-
+// classname and filename should be same
 const executeJava = (filepath) => {
   const jobId = path.basename(filepath).split(".")[0];
   const outPath = path.join(outputPath, `${jobId}.exe`);
 
   return new Promise((resolve, reject) => {
     exec(
-      ``,
+      `javac ./codes/${jobId}.java -d languages/outputs/ && cd languages/outputs/ && java ${jobId}`,
       (error, stdout, stderr) => {
         error && reject({ error, stderr });
         stderr && reject(stderr);

@@ -1,0 +1,1 @@
+#include<bits/stdc++.h> \n using namespace std; int main(){   printf("Hell0"); return 0;}
